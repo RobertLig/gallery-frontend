@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "paintings": "Paintings",
+    "auctions": "Auctions",
+    "cart": "Cart",
+    "profile": "Profile",
+    "login": "Login",
+    "logout": "Logout",
+    "admin": "Admin"
+  },
+  "home": {
+    "title": "Welcome to Art Gallery",
+    "subtitle": "Discover unique paintings and participate in live auctions",
+    "featured": "Featured Paintings"
+  },
+  "paintings": {
+    "title": "Paintings",
+    "filter": "Filter",
+    "sortBy": "Sort by",
+    "recent": "Recent",
+    "oldest": "Oldest",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "medium": "Medium",
+    "year": "Year",
+    "priceRange": "Price Range",
+    "status": "Status",
+    "available": "Available",
+    "sold": "Sold",
+    "inAuction": "In Auction",
+    "draft": "Draft",
+    "loadMore": "Load More",
+    "noResults": "No paintings found"
+  },
+  "auctions": {
+    "title": "Active Auctions",
+    "currentBid": "Current Bid",
+    "endsIn": "Ends in",
+    "placeBid": "Place Bid",
+    "yourBid": "Your Bid",
+    "bidTooLow": "Bid must be higher than current bid",
+    "auctionEnded": "Auction has ended",
+    "noAuctions": "No active auctions"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "unavailable": "This item is no longer available"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "items": "Items",
+    "subtotal": "Subtotal",
+    "payment": "Payment",
+    "complete": "Complete Purchase",
+    "pickupInfo": "Pickup Information",
+    "pickupAddress": "Pickup Address",
+    "contactPhone": "Contact Phone",
+    "success": "Payment Successful!",
+    "pending": "Payment Pending",
+    "failed": "Payment Failed"
+  },
+  "profile": {
+    "title": "My Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "locale": "Language",
+    "update": "Update Profile",
+    "orders": "My Orders",
+    "noOrders": "No orders yet"
+  },
+  "auth": {
+    "login": "Sign in with Google",
+    "logout": "Logout",
+    "loading": "Loading..."
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "createPainting": "Create Painting",
+    "editPainting": "Edit Painting",
+    "deletePainting": "Delete Painting",
+    "startAuction": "Start Auction",
+    "manageOrders": "Manage Orders",
+    "uploadPhotos": "Upload Photos",
+    "dragToSort": "Drag to reorder photos"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "networkError": "Network error. Please try again.",
+    "unauthorized": "Please login to continue",
+    "forbidden": "You don't have permission to access this"
+  },
+  "legal": {
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  }
+}

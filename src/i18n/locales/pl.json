@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "paintings": "Obrazy",
+    "auctions": "Aukcje",
+    "cart": "Koszyk",
+    "profile": "Profil",
+    "login": "Zaloguj",
+    "logout": "Wyloguj",
+    "admin": "Admin"
+  },
+  "home": {
+    "title": "Witamy w Galerii Sztuki",
+    "subtitle": "Odkryj unikalne obrazy i bierz udział w żywych aukcjach",
+    "featured": "Wyróżnione obrazy"
+  },
+  "paintings": {
+    "title": "Obrazy",
+    "filter": "Filtruj",
+    "sortBy": "Sortuj według",
+    "recent": "Najnowsze",
+    "oldest": "Najstarsze",
+    "priceAsc": "Cena: od najniższej",
+    "priceDesc": "Cena: od najwyższej",
+    "medium": "Medium",
+    "year": "Rok",
+    "priceRange": "Przedział cenowy",
+    "status": "Status",
+    "available": "Dostępny",
+    "sold": "Sprzedany",
+    "inAuction": "Na aukcji",
+    "draft": "Szkic",
+    "loadMore": "Załaduj więcej",
+    "noResults": "Nie znaleziono obrazów"
+  },
+  "auctions": {
+    "title": "Aktywne aukcje",
+    "currentBid": "Obecna oferta",
+    "endsIn": "Kończy się za",
+    "placeBid": "Złóż ofertę",
+    "yourBid": "Twoja oferta",
+    "bidTooLow": "Oferta musi być wyższa niż obecna",
+    "auctionEnded": "Aukcja zakończona",
+    "noAuctions": "Brak aktywnych aukcji"
+  },
+  "cart": {
+    "title": "Koszyk zakupowy",
+    "empty": "Twój koszyk jest pusty",
+    "total": "Suma",
+    "checkout": "Zamów",
+    "remove": "Usuń",
+    "unavailable": "Ten produkt nie jest już dostępny"
+  },
+  "checkout": {
+    "title": "Zamówienie",
+    "items": "Przedmioty",
+    "subtotal": "Podsumowanie",
+    "payment": "Płatność",
+    "complete": "Zakończ zakup",
+    "pickupInfo": "Informacje o odbiorze",
+    "pickupAddress": "Adres odbioru",
+    "contactPhone": "Telefon kontaktowy",
+    "success": "Płatność zakończona!",
+    "pending": "Płatność w trakcie",
+    "failed": "Płatność nieudana"
+  },
+  "profile": {
+    "title": "Mój profil",
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "locale": "Język",
+    "update": "Aktualizuj profil",
+    "orders": "Moje zamówienia",
+    "noOrders": "Brak zamówień"
+  },
+  "auth": {
+    "login": "Zaloguj przez Google",
+    "logout": "Wyloguj",
+    "loading": "Ładowanie..."
+  },
+  "admin": {
+    "title": "Panel administracyjny",
+    "createPainting": "Utwórz obraz",
+    "editPainting": "Edytuj obraz",
+    "deletePainting": "Usuń obraz",
+    "startAuction": "Rozpocznij aukcję",
+    "manageOrders": "Zarządzaj zamówieniami",
+    "uploadPhotos": "Prześlij zdjęcia",
+    "dragToSort": "Przeciągnij aby zmienić kolejność"
+  },
+  "common": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "close": "Zamknij",
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces",
+    "confirm": "Potwierdź",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "submit": "Wyślij"
+  },
+  "errors": {
+    "required": "To pole jest wymagane",
+    "invalidEmail": "Nieprawidłowy adres email",
+    "invalidPhone": "Nieprawidłowy numer telefonu",
+    "networkError": "Błąd sieci. Spróbuj ponownie.",
+    "unauthorized": "Zaloguj się aby kontynuować",
+    "forbidden": "Nie masz uprawnień do dostępu"
+  },
+  "legal": {
+    "terms": "Regulamin",
+    "privacy": "Polityka prywatności",
+    "contact": "Kontakt"
+  }
+}
