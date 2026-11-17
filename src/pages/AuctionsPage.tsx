@@ -88,7 +88,7 @@ const AuctionsPage: React.FC = () => {
       fetchAuction(selectedAuction.id);
     } catch (error) {
       console.error('Failed to place bid:', error);
-      alert('Failed to place bid');
+      alert(t('auctions.placeBidFailed'));
     } finally {
       setPlacingBid(false);
     }
@@ -163,11 +163,11 @@ const AuctionsPage: React.FC = () => {
               </form>
             )}
             <div className="mt-6">
-              <h3 className="text-xl font-bold mb-2">Bid History</h3>
+              <h3 className="text-xl font-bold mb-2">{t('auctions.bidHistory')}</h3>
               <ul className="space-y-2">
                 {selectedAuction.bids.map((bid, index) => (
                   <li key={index} className="flex justify-between">
-                    <span>Bid #{index + 1}</span>
+                    <span>{t('auctions.bidNumber')} #{index + 1}</span>
                     <span className="font-semibold">{formatPrice(bid.amountMinor, selectedAuction.currency)}</span>
                   </li>
                 ))}

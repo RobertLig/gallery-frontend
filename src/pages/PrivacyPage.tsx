@@ -10,70 +10,67 @@ const PrivacyPage: React.FC = () => {
       
       <div className="card bg-base-100 shadow-xl">
         <div className="card-body">
-          <h2 className="text-xl font-bold">1. Information We Collect</h2>
+          <h2 className="text-xl font-bold">1. {t('legal.privacySection1')}</h2>
           <p>
-            We collect information you provide directly to us, including:
+            {t('legal.privacySection1Intro')}
           </p>
           <ul>
-            <li>Google account information (email, name) when you authenticate</li>
-            <li>Profile information you choose to provide (phone number)</li>
-            <li>Order and purchase history</li>
-            <li>Bidding activity in auctions</li>
+            <li>{t('legal.privacySection1Item1')}</li>
+            <li>{t('legal.privacySection1Item2')}</li>
+            <li>{t('legal.privacySection1Item3')}</li>
+            <li>{t('legal.privacySection1Item4')}</li>
           </ul>
 
-          <h2 className="text-xl font-bold mt-4">2. How We Use Your Information</h2>
+          <h2 className="text-xl font-bold mt-4">2. {t('legal.privacySection2')}</h2>
           <p>
-            We use the information we collect to:
+            {t('legal.privacySection2Intro')}
           </p>
           <ul>
-            <li>Provide, maintain, and improve our services</li>
-            <li>Process transactions and send you related information</li>
-            <li>Send you notifications about auctions and orders</li>
-            <li>Respond to your comments and questions</li>
-            <li>Monitor and analyze trends, usage, and activities</li>
+            <li>{t('legal.privacySection2Item1')}</li>
+            <li>{t('legal.privacySection2Item2')}</li>
+            <li>{t('legal.privacySection2Item3')}</li>
+            <li>{t('legal.privacySection2Item4')}</li>
+            <li>{t('legal.privacySection2Item5')}</li>
           </ul>
 
-          <h2 className="text-xl font-bold mt-4">3. Information Sharing</h2>
+          <h2 className="text-xl font-bold mt-4">3. {t('legal.privacySection3')}</h2>
           <p>
-            We do not sell your personal information. We may share information with:
+            {t('legal.privacySection3Text')}
           </p>
           <ul>
-            <li>Service providers who perform services on our behalf (e.g., Stripe for payments)</li>
-            <li>Google for authentication purposes</li>
-            <li>When required by law or to protect our rights</li>
+            <li>{t('legal.privacySection3Item1')}</li>
+            <li>{t('legal.privacySection3Item2')}</li>
+            <li>{t('legal.privacySection3Item3')}</li>
           </ul>
 
-          <h2 className="text-xl font-bold mt-4">4. Data Security</h2>
+          <h2 className="text-xl font-bold mt-4">4. {t('legal.privacySection4')}</h2>
           <p>
-            We implement appropriate technical and organizational measures to protect your 
-            personal data against unauthorized access, alteration, disclosure, or destruction.
+            {t('legal.privacySection4Text')}
           </p>
 
-          <h2 className="text-xl font-bold mt-4">5. Your Rights</h2>
+          <h2 className="text-xl font-bold mt-4">5. {t('legal.privacySection5')}</h2>
           <p>
-            You have the right to:
+            {t('legal.privacySection5Intro')}
           </p>
           <ul>
-            <li>Access your personal data</li>
-            <li>Correct inaccurate data</li>
-            <li>Request deletion of your account and data</li>
-            <li>Opt-out of certain communications</li>
+            <li>{t('legal.privacySection5Item1')}</li>
+            <li>{t('legal.privacySection5Item2')}</li>
+            <li>{t('legal.privacySection5Item3')}</li>
+            <li>{t('legal.privacySection5Item4')}</li>
           </ul>
 
-          <h2 className="text-xl font-bold mt-4">6. Cookies</h2>
+          <h2 className="text-xl font-bold mt-4">6. {t('legal.privacySection6')}</h2>
           <p>
-            We use cookies and similar technologies to improve your experience, analyze usage, 
-            and assist in our marketing efforts. You can control cookie settings through your browser.
+            {t('legal.privacySection6Text')}
           </p>
 
-          <h2 className="text-xl font-bold mt-4">7. Contact Us</h2>
+          <h2 className="text-xl font-bold mt-4">7. {t('legal.privacySection7')}</h2>
           <p>
-            If you have questions about this Privacy Policy, please contact us through the 
-            contact information available in your profile.
+            {t('legal.privacySection7Text')}
           </p>
 
           <p className="mt-4 text-sm text-gray-600">
-            Last updated: November 2026
+            {t('legal.lastUpdated')}
           </p>
         </div>
       </div>

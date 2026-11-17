@@ -41,9 +41,9 @@ const CheckoutSuccessPage: React.FC = () => {
             <>
               <div className="text-6xl mb-4">✅</div>
               <h2 className="text-2xl font-bold">{t('checkout.success')}</h2>
-              <p className="mt-4">Thank you for your purchase!</p>
+              <p className="mt-4">{t('checkout.thankYou')}</p>
               <button onClick={() => navigate('/profile')} className="btn btn-primary mt-4">
-                View Orders
+                {t('checkout.viewOrders')}
               </button>
             </>
           )}
@@ -51,16 +51,16 @@ const CheckoutSuccessPage: React.FC = () => {
             <>
               <div className="text-6xl mb-4">⏳</div>
               <h2 className="text-2xl font-bold">{t('checkout.pending')}</h2>
-              <p className="mt-4">Your payment is being processed</p>
+              <p className="mt-4">{t('checkout.paymentProcessing')}</p>
             </>
           )}
           {status === 'failed' && (
             <>
               <div className="text-6xl mb-4">❌</div>
               <h2 className="text-2xl font-bold">{t('checkout.failed')}</h2>
-              <p className="mt-4">Please try again or contact support</p>
+              <p className="mt-4">{t('checkout.tryAgain')}</p>
               <button onClick={() => navigate('/cart')} className="btn btn-primary mt-4">
-                Return to Cart
+                {t('checkout.returnToCart')}
               </button>
             </>
           )}

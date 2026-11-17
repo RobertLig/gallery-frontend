@@ -16,6 +16,7 @@ export interface AuthResponse {
 
 export const loginWithGoogle = async (idToken: string): Promise<AuthResponse> => {
   const response = await api.post<AuthResponse>('/auth/google', { idToken });
+  sessionStorage.removeItem('auth_refresh_failed');
   return response.data;
 };
 
@@ -26,6 +27,7 @@ export const refreshAuth = async (): Promise<AuthResponse> => {
 
 export const logout = async (): Promise<void> => {
   await api.post('/auth/logout');
+  sessionStorage.removeItem('auth_refresh_failed');
 };
 
 export const getCurrentUser = async (): Promise<User> => {

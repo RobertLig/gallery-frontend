@@ -78,7 +78,7 @@ const PhotoUpload: React.FC<PhotoUploadProps> = ({ photos, onPhotosChange, maxPh
   const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
     if (photos.length + files.length > maxPhotos) {
-      alert(`Maximum ${maxPhotos} photos allowed`);
+      alert(t('admin.maxPhotosExceeded', { max: maxPhotos }));
       return;
     }
 
@@ -87,7 +87,7 @@ const PhotoUpload: React.FC<PhotoUploadProps> = ({ photos, onPhotosChange, maxPh
 
     for (const file of files) {
       if (file.size > 5 * 1024 * 1024) {
-        alert(`File ${file.name} is too large. Maximum size is 5MB.`);
+        alert(t('admin.fileTooLarge', { name: file.name }));
         continue;
       }
 
@@ -126,7 +126,7 @@ const PhotoUpload: React.FC<PhotoUploadProps> = ({ photos, onPhotosChange, maxPh
           className="file-input file-input-bordered w-full"
         />
         <label className="label">
-          <span className="label-text-alt">Max {maxPhotos} photos, 5MB each (JPEG, PNG, WebP)</span>
+          <span className="label-text-alt">{t('admin.maxPhotos', { max: maxPhotos })}</span>
         </label>
       </div>
 

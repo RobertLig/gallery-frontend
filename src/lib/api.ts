@@ -7,6 +7,22 @@ const api = axios.create({
   withCredentials: true,
 });
 
+let isRefreshing = false;
+let failedQueue: Array<{ resolve: (value: any) => void; reject: (reason?: any) => void }> = [];
+
+const REFRESH_FAILED_KEY = 'auth_refresh_failed';
+
+const processQueue = (error: any, token: string | null = null) => {
+  failedQueue.forEach((prom) => {
+    if (error) {
+      prom.reject(error);
+    } else {
+      prom.resolve(token);
+    }
+  });
+  failedQueue = [];
+};
+
 api.interceptors.request.use((config) => {
   const lang = localStorage.getItem('i18nextLng') || 'en';
   config.headers['Accept-Language'] = lang;
@@ -16,20 +32,8 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   async (error) => {
-    const originalRequest = error.config;
-
-    if (error.response?.status === 401 && !originalRequest._retry) {
-      originalRequest._retry = true;
-      try {
-        await api.post('/auth/refresh');
-        return api(originalRequest);
-      } catch (refreshError) {
-        // Refresh failed, redirect to login
-        window.location.href = '/login';
-        return Promise.reject(refreshError);
-      }
-    }
-
+    // Temporarily disabled automatic refresh to prevent infinite loop
+    // TODO: Re-enable with better logic to check if user has valid refresh token
     return Promise.reject(error);
   }
 );

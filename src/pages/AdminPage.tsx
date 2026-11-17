@@ -87,10 +87,10 @@ const AdminPage: React.FC = () => {
       setPrice('');
       setPhotos([]);
 
-      alert('Painting created successfully!');
+      alert(t('admin.paintingCreated'));
     } catch (error) {
       console.error('Failed to create painting:', error);
-      alert('Failed to create painting');
+      alert(t('admin.paintingCreateFailed'));
     } finally {
       setSaving(false);
     }
@@ -121,7 +121,7 @@ const AdminPage: React.FC = () => {
             <form onSubmit={handleCreatePainting} className="space-y-4">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title</span>
+                  <span className="label-text">{t('admin.title')}</span>
                 </label>
                 <input
                   type="text"
@@ -134,7 +134,7 @@ const AdminPage: React.FC = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Description</span>
+                  <span className="label-text">{t('admin.description')}</span>
                 </label>
                 <textarea
                   value={description}
@@ -147,7 +147,7 @@ const AdminPage: React.FC = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Medium</span>
+                  <span className="label-text">{t('admin.medium')}</span>
                 </label>
                 <input
                   type="text"
@@ -155,13 +155,13 @@ const AdminPage: React.FC = () => {
                   onChange={(e) => setMedium(e.target.value)}
                   required
                   className="input input-bordered w-full"
-                  placeholder="Oil on canvas, Watercolor, etc."
+                  placeholder={t('admin.mediumPlaceholder')}
                 />
               </div>
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Year</span>
+                  <span className="label-text">{t('admin.year')}</span>
                 </label>
                 <input
                   type="number"
@@ -174,7 +174,7 @@ const AdminPage: React.FC = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Price (PLN)</span>
+                  <span className="label-text">{t('admin.price')}</span>
                 </label>
                 <input
                   type="number"
@@ -183,7 +183,7 @@ const AdminPage: React.FC = () => {
                   onChange={(e) => setPrice(e.target.value)}
                   required
                   className="input input-bordered w-full"
-                  placeholder="1000.00"
+                  placeholder={t('admin.pricePlaceholder')}
                 />
               </div>
 
@@ -201,7 +201,7 @@ const AdminPage: React.FC = () => {
         <div className="card bg-base-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">{t('admin.manageOrders')}</h2>
-            <p className="text-gray-600">Order management coming soon</p>
+            <p className="text-gray-600">{t('admin.orderManagementComingSoon')}</p>
           </div>
         </div>
       )}
