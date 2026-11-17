@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 import { useAuth } from '../contexts/AuthContext';
 import { updateUserProfile } from '../lib/auth';
 import { useTranslation } from 'react-i18next';
@@ -67,13 +67,11 @@ const ProfilePage: React.FC = () => {
                 <span className="label-text">{t('profile.phone')}</span>
               </label>
               <PhoneInput
-                country={'pl'}
+                defaultCountry="pl"
                 value={phone}
-                onChange={setPhone}
-                inputClass="input input-bordered w-full"
-                containerClass="w-full"
-                buttonClass="btn btn-ghost"
-                dropdownClass="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-64"
+                onChange={(phone) => setPhone(phone)}
+                className="w-full"
+                inputClassName="input input-bordered w-full"
               />
             </div>
             <div className="form-control">
